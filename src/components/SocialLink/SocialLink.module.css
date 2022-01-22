@@ -1,0 +1,9 @@
+.navbarSocialLink {
+  display: flex;
+  align-items: center;
+}
+
+.navbarSocialLink img {
+  width: 24px;
+  margin-right: 0.5rem;
+}

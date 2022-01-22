@@ -1,0 +1,32 @@
+.wrapper {
+  padding: 5rem 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  background: url(../../assets/images/art.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  border-radius: 30px;
+  text-align: center;
+}
+
+.btn {
+  padding: 1rem 3rem;
+  border: 2px solid black;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  transform: translateY(-10px);
+}
+.btn svg {
+  fill: black;
+  margin-right: 0.7rem;
+}

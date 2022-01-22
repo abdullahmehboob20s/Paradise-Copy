@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.left {
+  margin-right: 12rem;
+}
+.right {
+  flex: 0.7;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  border-radius: 100px;
+  background-color: #ffffff;
+  padding: 1rem 3rem;
+  transition: all 0.4s ease;
+}
+
+.btn:hover {
+  transform: translateY(-15px);
+}
+
+.btn :first-child {
+  margin-right: 0.7rem;
+}

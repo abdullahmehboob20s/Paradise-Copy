@@ -1,0 +1,7 @@
+.roadmapTree {
+  position: absolute;
+  top: -380px;
+  width: 488px;
+  right: -100px;
+  z-index: -1;
+}

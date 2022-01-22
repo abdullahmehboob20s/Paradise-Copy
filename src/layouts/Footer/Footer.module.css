@@ -1,0 +1,31 @@
+.footer {
+  padding-top: 2rem;
+  border-top: 1px solid #6b6b6b;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer_left {
+  display: flex;
+  align-items: center;
+}
+
+.footer_left > :not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+.logo {
+  width: 170px;
+  margin-right: 2rem !important;
+}
+
+.footer_right {
+  display: flex;
+  align-items: center;
+}
+
+.footer_right > :not(:last-child) {
+  margin-right: 1.5rem;
+}

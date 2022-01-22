@@ -1,0 +1,8 @@
+.card {
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.cardTitle {
+  padding: 1.5rem 2rem;
+}

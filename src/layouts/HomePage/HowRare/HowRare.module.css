@@ -1,0 +1,36 @@
+.tools {
+  display: flex;
+  align-items: center;
+}
+
+.daimond {
+  transition: all 0.2s ease;
+  width: 60px;
+  margin-right: 1.8rem;
+}
+.daimond:hover {
+  transform: translateY(-5px);
+}
+
+.btn {
+  color: #ffffff;
+  border-radius: 30px;
+  padding: 1rem 2rem;
+  background-color: #be185d;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+.btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.cards {
+  display: flex;
+  width: 80%;
+}
+
+.cards > :not(:last-child) {
+  margin-right: 5rem;
+}

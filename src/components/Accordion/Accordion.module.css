@@ -1,0 +1,44 @@
+.accordion {
+  border-top: 1px solid #6b6b6b;
+  /* border-bottom: 1px solid #6b6b6b; */
+}
+.accordionBtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+}
+
+.accordionBtn > span {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+.accordion.active span {
+  transform: rotate(45deg);
+}
+
+.accordionBtn:hover > span {
+  background-color: #aeb6fd;
+}
+
+.accordionBtn > span > svg {
+  fill: black;
+}
+
+.accordionBody {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.accordionBody_content {
+  padding: 1.5rem 0;
+  padding-top: 0;
+}

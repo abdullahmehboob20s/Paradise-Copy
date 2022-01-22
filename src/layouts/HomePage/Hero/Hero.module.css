@@ -1,0 +1,55 @@
+.hero h1 {
+  text-shadow: 0px 6px 1px #353a5c;
+}
+
+.heroImg {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+
+.heroImg .mainImg {
+  border-radius: 30px;
+}
+
+.heroLeftTree {
+  position: absolute;
+  left: -200px;
+  top: -300px;
+  width: 488px;
+  z-index: -1;
+}
+.heroRightTree {
+  position: absolute;
+  right: -200px;
+  top: -280px;
+  width: 358px;
+  z-index: -1;
+}
+
+.enterIsland {
+  position: static;
+  width: 361px;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+  margin: 0 auto;
+  margin-top: -50px;
+}
+
+.enterIsland:hover {
+  transform: scale(1.1);
+}
+
+.heroVideo {
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  position: relative; /* If you want text inside of it */
+}
+.heroVideo iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
