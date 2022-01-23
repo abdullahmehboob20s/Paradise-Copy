@@ -38,6 +38,7 @@ function Navbar() {
               </button>
 
               <ScrollLink
+                onClick={() => setShow(false)}
                 offset={-120}
                 to="story"
                 className={`${styles.navbarScrollLink} white uppercase fs-14px font-rubik-medium pointer`}
@@ -45,6 +46,7 @@ function Navbar() {
                 Story
               </ScrollLink>
               <ScrollLink
+                onClick={() => setShow(false)}
                 offset={-120}
                 to="rarity"
                 className={`${styles.navbarScrollLink} white uppercase fs-14px font-rubik-medium pointer`}
@@ -52,6 +54,7 @@ function Navbar() {
                 Rarity
               </ScrollLink>
               <ScrollLink
+                onClick={() => setShow(false)}
                 offset={-120}
                 to="roadmap"
                 className={`${styles.navbarScrollLink} white uppercase fs-14px font-rubik-medium pointer`}
@@ -65,6 +68,7 @@ function Navbar() {
                 Island
               </Link>
               <ScrollLink
+                onClick={() => setShow(false)}
                 offset={-120}
                 to="faq"
                 className={`${styles.navbarScrollLink} white uppercase fs-14px font-rubik-medium pointer`}
@@ -72,6 +76,7 @@ function Navbar() {
                 FAqs
               </ScrollLink>
               <ScrollLink
+                onClick={() => setShow(false)}
                 offset={-120}
                 to="team"
                 className={`${styles.navbarScrollLink} white uppercase fs-14px font-rubik-medium pointer`}

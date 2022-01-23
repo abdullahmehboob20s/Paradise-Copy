@@ -8,6 +8,7 @@ import openseaIcon from "assets/images/opensea-icon.png";
 
 import { Link as ScrollLink } from "react-scroll";
 import SocialLink from "components/SocialLink/SocialLink";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -18,31 +19,42 @@ function Footer() {
 
           <div className={styles.links}>
             <ScrollLink
+              offset={-120}
+              to="story"
               className={`${styles.navbarScrollLink} white uppercase fs-16px font-rubik-medium pointer`}
             >
               Story
             </ScrollLink>
             <ScrollLink
+              offset={-120}
               className={`${styles.navbarScrollLink} white uppercase fs-16px font-rubik-medium pointer`}
+              to="rarity"
             >
               Rarity
             </ScrollLink>
             <ScrollLink
+              offset={-120}
+              to="roadmap"
               className={`${styles.navbarScrollLink} white uppercase fs-16px font-rubik-medium pointer`}
             >
               Roadmap
             </ScrollLink>
-            <ScrollLink
+            <Link
+              to="/"
               className={`${styles.navbarScrollLink} white uppercase fs-16px font-rubik-medium pointer`}
             >
               Island
-            </ScrollLink>
+            </Link>
             <ScrollLink
+              offset={-120}
+              to="faq"
               className={`${styles.navbarScrollLink} white uppercase fs-16px font-rubik-medium pointer`}
             >
               FAqs
             </ScrollLink>
             <ScrollLink
+              offset={-120}
+              to="team"
               className={`${styles.navbarScrollLink} white uppercase fs-16px font-rubik-medium pointer`}
             >
               Team
