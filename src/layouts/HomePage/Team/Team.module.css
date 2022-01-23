@@ -12,3 +12,33 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 3rem 2rem;
 }
+
+@media (max-width: 1200px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem 2rem;
+  }
+}
+@media (max-width: 760px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 2rem;
+  }
+
+  .header {
+    align-items: unset;
+    flex-direction: column;
+  }
+
+  .left {
+    margin-right: 0rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+}

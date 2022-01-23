@@ -2,22 +2,33 @@ import React from "react";
 import styles from "./GetOne.module.css";
 
 import openSeaIconNomral from "assets/images/opensea-icon-norma.png";
+import useMediaQuery from "hooks/useMediaQuery";
 
 function GetOne() {
+  const isBellow760 = useMediaQuery("(max-width: 760px)");
+
   return (
     <div className="container-wrapper-2">
       <div className={styles.container}>
         <div className={`${styles.left}`}>
-          <h1 className="font-paradise fs-64px weight-3 lh-1_1 white-shadow-text mb-60px">
+          <h1
+            className={`font-paradise fs-64px weight-3 lh-1_1 white-shadow-text ${
+              isBellow760 ? "" : "mb-60px"
+            } `}
+          >
             How do I <br /> get one?
           </h1>
 
-          <button
-            className={`${styles.btn} fs-18px font-rubik-bold pointer black block margin-center `}
-          >
-            <img src={openSeaIconNomral} style={{ width: "30px" }} alt="" />
-            Opensea
-          </button>
+          {isBellow760 ? (
+            ""
+          ) : (
+            <button
+              className={`${styles.btn} fs-18px font-rubik-bold pointer black block margin-center `}
+            >
+              <img src={openSeaIconNomral} style={{ width: "30px" }} alt="" />
+              Opensea
+            </button>
+          )}
         </div>
 
         <div className={styles.right}>
@@ -40,6 +51,18 @@ function GetOne() {
             and join our community of 10,000+ strong to collaborate and conquer
             together.
           </p>
+
+          {isBellow760 ? (
+            <button
+              className={`${styles.btn} fs-18px font-rubik-bold pointer black block `}
+              style={{ marginTop: "40px" }}
+            >
+              <img src={openSeaIconNomral} style={{ width: "30px" }} alt="" />
+              Opensea
+            </button>
+          ) : (
+            ""
+          )}
         </div>
       </div>
     </div>

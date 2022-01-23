@@ -624,3 +624,59 @@ li {
   z-index: -1;
   filter: blur(80px);
 }
+
+.black-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 999 !important;
+  transition: all 0.3s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+.black-screen.show {
+  opacity: 1;
+  pointer-events: visible;
+}
+
+@media (max-width: 1000px) {
+  .container-wrapper {
+    width: 90%;
+  }
+  .container-wrapper-2 {
+    width: 90%;
+  }
+
+  :root {
+    --fs-64px: 50px;
+    --fs-20px: 16px;
+    --fs-24px: 18px;
+  }
+}
+
+@media (max-width: 760px) {
+  :root {
+    --fs-64px: 40px;
+  }
+
+  .mb-100px {
+    margin-bottom: 70px;
+  }
+  .mb-150px {
+    margin-bottom: 50px;
+  }
+
+  .mb-70px {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 500px) {
+  :root {
+    --fs-64px: 30px;
+    --fs-24px: 16px;
+    --fs-18px: 16px;
+  }
+}

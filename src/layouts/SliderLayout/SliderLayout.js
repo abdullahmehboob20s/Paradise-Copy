@@ -25,7 +25,7 @@ function SliderLayout({ sliderData, titleEffect, title }) {
         </h1>
       </div>
 
-      <div className="relative">
+      <div className={`${styles.slider_container} relative`}>
         <Swiper
           spaceBetween={40}
           slidesPerView={3}
@@ -40,6 +40,20 @@ function SliderLayout({ sliderData, titleEffect, title }) {
               swiper.navigation.init();
               swiper.navigation.update();
             });
+          }}
+          breakpoints={{
+            850: {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            },
+            500: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            200: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
           }}
         >
           {sliderData.map((data, index) => (

@@ -53,3 +53,42 @@
   bottom: 0;
   right: 0;
 }
+
+@media (max-width: 1200px) {
+  .heroLeftTree {
+    position: absolute;
+    left: -150px;
+    top: -200px;
+    width: 350px;
+    z-index: -1;
+  }
+  .heroRightTree {
+    right: -100px;
+    top: -200px;
+    width: 250px;
+  }
+}
+
+@media (max-width: 500px) {
+  .heroLeftTree {
+    position: absolute;
+    left: -100px;
+    top: -150px;
+    width: 200px;
+    z-index: -1;
+  }
+  .heroRightTree {
+    right: -80px;
+    top: -120px;
+    width: 150px;
+  }
+
+  .enterIsland {
+    width: 250px;
+    margin-top: -28px;
+  }
+
+  .heroImg .mainImg {
+    border-radius: 10px;
+  }
+}

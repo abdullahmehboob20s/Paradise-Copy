@@ -6,18 +6,22 @@ import heroImg from "assets/images/hero-img.jpg";
 import heroLeftTree from "assets/images/hero-left-tree.png";
 import heroRightTree from "assets/images/hero-right-tree.png";
 import enterIsland from "assets/images/enter-island.png";
+import useMediaQuery from "hooks/useMediaQuery";
 
 function Hero() {
+  const isBellow1200 = useMediaQuery("(max-width: 1200px)");
+
   return (
     <div className={styles.hero}>
       <div className="container-wrapper">
         <div className={`${styles.heroTtitle} text-center mb-50px`}>
           <h1 className="font-paradise fs-64px mb-20px purple lh-1_1 weight-3">
-            Welcome to the home <br /> of the Paradise Trippies
+            Welcome to the home {isBellow1200 ? "" : <br />} of the Paradise
+            Trippies
           </h1>
           <p className="fs-20px white lh-1_5 weight-4 mb-30px">
-            A collection of 10,000 unique NFTs that were <br /> born from Party
-            Pete's (BAYC #9696)
+            A collection of 10,000 unique NFTs that were{" "}
+            {isBellow1200 ? "" : <br />} born from Party Pete's (BAYC #9696)
           </p>
 
           <img src={trippleVision} style={{ width: "174px" }} alt="" />

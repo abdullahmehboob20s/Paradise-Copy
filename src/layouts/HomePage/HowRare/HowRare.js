@@ -4,6 +4,7 @@ import howRare from "assets/images/how-rare.png";
 import rarityDaimond from "assets/images/rarity-daimond.png";
 import Icon_umbrella from "assets/images/Icon_umbrella.png";
 import Icon_crystal from "assets/images/Icon_crystal.png";
+import useMediaQuery from "hooks/useMediaQuery";
 
 const Card = ({ icon, title, desc }) => {
   return (
@@ -16,6 +17,8 @@ const Card = ({ icon, title, desc }) => {
 };
 
 function HowRare() {
+  const isBellow1200 = useMediaQuery("(max-width: 1200px)");
+
   return (
     <div>
       <div className="container-wrapper-2">
@@ -55,7 +58,10 @@ function HowRare() {
       </div>
 
       <div className="container-wrapper-2">
-        <div className={styles.cards}>
+        <div
+          className={styles.cards}
+          style={{ width: isBellow1200 ? "100%" : "80%" }}
+        >
           <Card
             icon={Icon_umbrella}
             title="Charity"

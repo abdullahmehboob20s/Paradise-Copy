@@ -26,3 +26,26 @@
 .btn :first-child {
   margin-right: 0.7rem;
 }
+
+@media (max-width: 1200px) {
+  .right {
+    flex: 1;
+  }
+  .left {
+    margin-right: 5rem;
+  }
+}
+
+@media (max-width: 760px) {
+  .container {
+    display: flex;
+    align-items: unset;
+    flex-direction: column;
+  }
+
+  .left {
+    margin-right: 0rem;
+    margin-bottom: 2rem;
+    width: fit-content;
+  }
+}

@@ -16,36 +16,38 @@ function Footer() {
         <div className={styles.footer_left}>
           <img src={logo} className={styles.logo} alt="" />
 
-          <ScrollLink
-            className={`${styles.navbarScrollLink} white uppercase fs-16px font-rubik-medium pointer`}
-          >
-            Story
-          </ScrollLink>
-          <ScrollLink
-            className={`${styles.navbarScrollLink} white uppercase fs-16px font-rubik-medium pointer`}
-          >
-            Rarity
-          </ScrollLink>
-          <ScrollLink
-            className={`${styles.navbarScrollLink} white uppercase fs-16px font-rubik-medium pointer`}
-          >
-            Roadmap
-          </ScrollLink>
-          <ScrollLink
-            className={`${styles.navbarScrollLink} white uppercase fs-16px font-rubik-medium pointer`}
-          >
-            Island
-          </ScrollLink>
-          <ScrollLink
-            className={`${styles.navbarScrollLink} white uppercase fs-16px font-rubik-medium pointer`}
-          >
-            FAqs
-          </ScrollLink>
-          <ScrollLink
-            className={`${styles.navbarScrollLink} white uppercase fs-16px font-rubik-medium pointer`}
-          >
-            Team
-          </ScrollLink>
+          <div className={styles.links}>
+            <ScrollLink
+              className={`${styles.navbarScrollLink} white uppercase fs-16px font-rubik-medium pointer`}
+            >
+              Story
+            </ScrollLink>
+            <ScrollLink
+              className={`${styles.navbarScrollLink} white uppercase fs-16px font-rubik-medium pointer`}
+            >
+              Rarity
+            </ScrollLink>
+            <ScrollLink
+              className={`${styles.navbarScrollLink} white uppercase fs-16px font-rubik-medium pointer`}
+            >
+              Roadmap
+            </ScrollLink>
+            <ScrollLink
+              className={`${styles.navbarScrollLink} white uppercase fs-16px font-rubik-medium pointer`}
+            >
+              Island
+            </ScrollLink>
+            <ScrollLink
+              className={`${styles.navbarScrollLink} white uppercase fs-16px font-rubik-medium pointer`}
+            >
+              FAqs
+            </ScrollLink>
+            <ScrollLink
+              className={`${styles.navbarScrollLink} white uppercase fs-16px font-rubik-medium pointer`}
+            >
+              Team
+            </ScrollLink>
+          </div>
         </div>
         <div className={styles.footer_right}>
           <SocialLink

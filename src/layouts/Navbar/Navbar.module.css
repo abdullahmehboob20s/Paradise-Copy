@@ -4,7 +4,7 @@
   left: 0px;
   width: 100%;
   background-color: black;
-  z-index: 10000000 !important;
+  z-index: 1000 !important;
 }
 
 .navbar {
@@ -37,4 +37,108 @@
 }
 .navbarScrollLink:hover {
   color: var(--purple);
+}
+
+.hamburger {
+  display: none;
+}
+
+.sidebarLogo {
+  display: none;
+}
+
+.sidebarCloseIcon {
+  display: none;
+  width: fit-content;
+}
+.sidebarCloseIcon svg {
+  fill: white;
+}
+
+@media (max-width: 1200px) {
+  .navbarLeft {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 260px;
+    height: 100%;
+    background-color: black;
+    flex-direction: column;
+    justify-content: unset;
+    align-items: unset;
+    padding: 48px 40px 38px;
+    z-index: 100000 !important;
+    transform: translateX(260px);
+    transition: all 0.3s ease;
+  }
+  .navbarLeft.show {
+    transform: translateX(0);
+  }
+  .navbarLeft > :not(:last-child) {
+    margin-bottom: 2rem;
+  }
+  .navbarScrollLink {
+    font-size: 20px;
+    width: fit-content;
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0rem;
+    gap: 0;
+  }
+
+  .navbarRight > :not(:last-child) {
+    margin-right: 3rem;
+  }
+
+  .hamburger {
+    display: block;
+  }
+  .hamburger img {
+    width: 48px;
+    cursor: pointer;
+  }
+
+  .sidebarLogo {
+    display: block;
+    width: 100%;
+  }
+
+  .sidebarCloseIcon {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 850px) {
+  .navbarRight > :not(:last-child) {
+    margin-right: 2rem;
+  }
+
+  .navbarBrand {
+    width: 140px;
+  }
+}
+@media (max-width: 500px) {
+  .navbarRight > :not(:last-child) {
+    margin-right: 1rem;
+  }
+
+  .navbarBrand {
+    width: 120px;
+  }
+}
+@media (max-width: 380px) {
+  .navbarRight > :not(:last-child) {
+    margin-right: 0.5rem;
+  }
+
+  .navbarBrand {
+    width: 100px;
+  }
 }

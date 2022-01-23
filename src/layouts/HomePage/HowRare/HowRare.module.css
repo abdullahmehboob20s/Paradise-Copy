@@ -28,9 +28,18 @@
 
 .cards {
   display: flex;
-  width: 80%;
 }
 
 .cards > :not(:last-child) {
   margin-right: 5rem;
+}
+
+@media (max-width: 760px) {
+  .cards {
+    flex-direction: column;
+  }
+  .cards > :not(:last-child) {
+    margin-right: 0rem;
+    margin-bottom: 1rem;
+  }
 }
